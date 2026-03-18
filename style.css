@@ -1,0 +1,61 @@
+body {
+font-family:  Helvetica; 
+background: #ffaf01;
+text-align : CENTER;
+}
+body {
+  background: url('premium_vector-1711987810156-4793e4aa786e.avif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#APP {
+Width: 600px;
+margin: auto;
+background: White;
+Padding: 20px;
+}
+
+input, textarea{
+width:90%;
+Padding: 10px;
+margin:5px;
+}
+
+Button{
+Padding: 10px;
+background:#3299db;
+color: white;
+border: none;
+cursor:pointer;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.list-layout {
+  display: block;
+}
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

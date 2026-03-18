@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> Vue BLOG WEBSITE </title>
+        <!--Vue CDN-->
+        <script src="https://unpkg.com/vue@3"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <div id="app">
+            <h1> ME Website</h1>
+            <h2>Create Blog Post</h2>
+
+            <input model v-model="title" placeholder="Post Title"><br>
+            
+            <textarea v-model="content" placeholder="Post Content"></textarea><br>
+            
+            <button @click="addPost">publish post</button>
+            <hr>
+
+            <h3>Blog Posts</h3>
+
+            
+            <div v-for ="(post,index) in posts" :key="index" class="post">
+                <h3> {{ post.title}}</h3>
+                <p> {{ post.content }}</p><br>
+
+  <button @click="deletePost(post.id)">Delete</button>
+</div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
